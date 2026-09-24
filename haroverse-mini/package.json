@@ -1,0 +1,12 @@
+{
+  "name": "haroverse-mini",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently -n server,client -c magenta,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "db:init": "node server/db.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
